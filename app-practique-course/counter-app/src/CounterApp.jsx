@@ -14,7 +14,7 @@ import PropTypes from 'prop-types';
         almacenar el estado de nuestro componente. Acepta un valor inicial para esa variable,
         y devuelve un array con dos elementos, el valor de la variable y la funcion para modificarla.
 
-        const [state = setState ] = useState(default)
+        const [state , setState ] = useState(default)
 
 
     ¿ Comunicacion entre Componentes?

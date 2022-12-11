@@ -5,6 +5,11 @@ import { CounterApp } from './CounterApp';
 import './styles.css'
 
 
+
+
+
+
+
 ReactDOM.createRoot( document.getElementById('root') ).render(
     <React.StrictMode>
         {/* Enviamos el valor inicial del contador mediante props 
@@ -16,7 +21,7 @@ ReactDOM.createRoot( document.getElementById('root') ).render(
 
                     const Example = ( {props } )  => {
                         return(
-                            <div>Props</div>
+|                      <div>Props</div>
                         )
                     }
         */}
