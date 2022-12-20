@@ -1,8 +1,0 @@
-/* src/index.css */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-.box-shadow {
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
-}

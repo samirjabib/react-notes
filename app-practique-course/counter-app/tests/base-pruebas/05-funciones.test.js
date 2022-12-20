@@ -9,7 +9,7 @@ describe('TEST ON FUNCTIONS', () => {
 
         const user = getUser();
 
-        expect( testUser ).toEqual( user );
+        expect( testUser ).toEqual( user ); //To equal nos sirve para comparar objetos a difernecia de toBe que evalua el tipod e dato
 
     });
 
