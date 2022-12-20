@@ -27,7 +27,7 @@ ReactDOM.createRoot( document.getElementById('root') ).render(
                     }
         */}
         {/* <CounterApp value={ 0 } /> */}
-        <FirstApp title='Hola soy goku'/>
+        <FirstApp title='Hola soy goku' subTitle='y me gusta el ramen'/>
     </React.StrictMode>
 );
 

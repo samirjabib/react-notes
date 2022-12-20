@@ -20,21 +20,25 @@ describe('Pruebas en <FirstApp', () => {
 
         // const h1 = container.querySelector('h1');
         // expect(h1.innerHTML).toContain( title )
-        expect( getByTestId('test-title').innerHTML ).toContain(title)
+        expect( getByTestId('test-title').innerHTML ).toContain(title) 
 
     });
 
-
+    
     test('debemostrar el subtitulo enviado por props', () => {
+
         const title = 'hola, soy goku';
-        const subTitle = ' soy un subtitulo';
-        const {getAllByText} = render(
+        const subTitle = 'soy un subtitulo';
+        const { getAllByText } = render(
             <FirstApp
                 title={title}
-                subtitle={subTitle}
+                subTitle={subTitle}
             />
-
-        )
+        );
+        expect( getAllByText(subTitle).length ).toBe(2);
     });
 
 });
+
+
+
