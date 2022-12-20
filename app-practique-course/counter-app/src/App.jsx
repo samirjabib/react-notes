@@ -32,5 +32,5 @@ ReactDOM.createRoot( document.getElementById('root') ).render(
 
 /*
     ¿Que son las props?
-
+        
 */
