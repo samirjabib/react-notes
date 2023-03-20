@@ -1,9 +1,8 @@
 import { useEffect, useState } from 'react';
-import { getGifs } from '../helpers/getGifs';
-
-export const useFetchGifs = ( category ) => {
+import { getGifs } from '../helpers/getGifs'
+export const useFetchGifs = ( category :any ) => {
  
-    const [images, setImages] = useState([]);
+    const [gifs, setGifs] = useState([]);
     const [isLoading, setIsLoading] = useState( true );
 
     const getImages = async() => {
@@ -22,7 +21,7 @@ export const useFetchGifs = ( category ) => {
                                                     pasamos la funcion callback para configurar el estado nuevamente, pasandole por parametros los nuevos valores,
                                                     recordar no usar un push para mutar el estado, no queremos eso, queremos actualizarlo. 
                                                     */
-        setImages(newImages);
+        setGifs(newImages);
         setIsLoading(false); //Seteamos como falso al recibir la respuesta de la API
         
     }
@@ -34,7 +33,7 @@ export const useFetchGifs = ( category ) => {
 
 
     return { //Retornamos un objeto con los siguientes estados
-        images, 
+        gifs, 
         isLoading
     }
 

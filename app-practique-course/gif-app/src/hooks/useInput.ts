@@ -1,15 +1,16 @@
 import { useState } from 'react';
 
 
-export const AddCategdory = ({ onNewCategory }) => {
-
+export const useInput = (onNewCategory : any) => {
+    
+    
     const [ inputValue, setInputValue ] = useState('');
 
-    const onInputChange = ({ target }) => {
+    const onInputChange = ({ target } :any) => {
         setInputValue( target.value ); //Extraemos el valor del evento que esta pasando en nuestro navegador
     }
 
-    const onSubmit = ( event ) => {
+    const onSubmit = ( event :any ) => {
 
         event.preventDefault();/*
                                 Para evitar el refresh del navegador
@@ -23,19 +24,13 @@ export const AddCategdory = ({ onNewCategory }) => {
                                                     
                                                     */
 
-        // setCategories( categories => [ inputValue, ...categories ]);
         setInputValue('');
         onNewCategory( inputValue.trim() );
     }
 
-    return (
-        <form onSubmit={ onSubmit }>
-            <input 
-                type="text"
-                placeholder="Buscar gifs"
-                value={ inputValue }
-                onChange={ onInputChange }
-            />
-        </form>
-    )
+    return{
+        onSubmit,
+        onInputChange,
+        inputValue,
+    }
 }
