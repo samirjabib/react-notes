@@ -1,9 +1,10 @@
 import { useState } from "react";
 
-export const useCategories = () => {
-  const [categories, setCategories] = useState(["One Punch"]);
+
+export const useCategoriesGifs = () => {
+  const [categories, setCategories] = useState<string[]>(["One Punch"]);
   
-  const onAddCategory = (newCategory: any) => {
+  const onAddCategory = (newCategory: string) => {
     if (categories.includes(newCategory)) return;
     setCategories([newCategory, ...categories]);
   };
