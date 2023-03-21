@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">12.5% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>1/8</span>
+                <span class='fraction'>8/8</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/2</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">12.5% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>1/8</span>
+                <span class='fraction'>8/8</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -88,43 +88,43 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { Gif } from '../types/gifs.type';
 &nbsp;
 &nbsp;
-export const getGifs = <span class="fstat-no" title="function not covered" >as</span>ync (category: string) =&gt; {
-  const url = <span class="cstat-no" title="statement not covered" >`https://api.giphy.com/v1/gifs/search?api_key=MLGxufz8ifKzLAwS6pzxPMLZvuIji0st&amp;q=${category}&amp;limit=10`;</span> /*La URL hacia la cual estamos haciedno las peticiones
+export const getGifs = async (category: string) =&gt; {
+  const url = `https://api.giphy.com/v1/gifs/search?api_key=MLGxufz8ifKzLAwS6pzxPMLZvuIji0st&amp;q=${category}&amp;limit=10`; /*La URL hacia la cual estamos haciedno las peticiones
                                                                                                                             en este caso la api GIF
                                                                                                                         */
-  const resp = <span class="cstat-no" title="statement not covered" >await fetch(url);</span> // Esperamos la respuesta y la almacenamos en una variable
-  const { data } = <span class="cstat-no" title="statement not covered" >await resp.json();</span> //Desectructuramos la data de nuestra respuesta, siempre recordando convertir esta respuesta a formato json.
+  const resp = await fetch(url); // Esperamos la respuesta y la almacenamos en una variable
+  const { data } = await resp.json(); //Desectructuramos la data de nuestra respuesta, siempre recordando convertir esta respuesta a formato json.
 &nbsp;
-  const gifs = <span class="cstat-no" title="statement not covered" >data.map(<span class="fstat-no" title="function not covered" >(g</span>if: Gif) =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >    console.log(gif)</span>
-<span class="cstat-no" title="statement not covered" >    return {</span>
+  const gifs = data.map((gif: Gif) =&gt; {
+    console.log(gif)
+    return {
       id: gif.id,
       title: gif.title,
       url: gif.images.downsized_medium.url,
     };
   });
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  return gifs; </span>// Retornamos la variable gifs que contiene el objeto.
+  return gifs; // Retornamos la variable gifs que contiene el objeto.
 };
 &nbsp;</pre></td></tr></table></pre>
 
@@ -133,7 +133,7 @@ export const getGifs = <span class="fstat-no" title="function not covered" >as</
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-03-21T00:33:11.651Z
+                at 2023-03-21T15:15:54.080Z
             </div>
         <script src="../prettify.js"></script>
         <script>
