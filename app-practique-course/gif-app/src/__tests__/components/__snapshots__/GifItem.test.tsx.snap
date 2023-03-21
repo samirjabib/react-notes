@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test in <GifItem/> gif item should be render props 1`] = `
+<div>
+  <div
+    class="card"
+  >
+    <img
+      alt="saitama"
+      src="htttps://one-puch.com/saitama.jpg"
+    />
+    <p>
+      saitama
+    </p>
+  </div>
+</div>
+`;
