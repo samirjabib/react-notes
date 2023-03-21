@@ -1,5 +1,6 @@
 import { AddCategory, GifGrid } from "./components";
-import { useCategoriesGifs } from './hooks/useCategories';
+import { useCategoriesGifs } from "./hooks/useCategories";
+import React from 'react'
 
 /*  NOTA:
     we can remember that hooks can't be use in conditionals because this make a bads function in the program.
@@ -7,7 +8,7 @@ import { useCategoriesGifs } from './hooks/useCategories';
 
 export const GifExpertApp = () => {
   const { categories, onAddCategory } = useCategoriesGifs();
-  
+
   return (
     <>
       <h1>GifExpertApp</h1>
