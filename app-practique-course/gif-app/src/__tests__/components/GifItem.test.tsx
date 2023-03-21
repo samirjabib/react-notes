@@ -16,10 +16,16 @@ describe("test in <GifItem/>", () => {
     render(<GifItem title={title} url={url} />);
     // screen.debug() //this is a console.log for component. 
     
-    const {  } = screen.getByRole('img')
-    c
-    
+    const image = screen.getByRole('img') as HTMLImageElement //here select the image
 
+    const { src, alt } = image
 
+    expect(src).toBe(url)
+    expect(alt).toBe(title)
   });
+
+  test.only('shoul be show the title in the component', () =>{
+    render(<GifItem title={title} url={url}/>)
+    expect(screen.getByText(title)).toBeTruthy()
+  })
 });
