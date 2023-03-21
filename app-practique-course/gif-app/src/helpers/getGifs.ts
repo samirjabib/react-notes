@@ -9,7 +9,6 @@ export const getGifs = async (category: string) => {
   const { data } = await resp.json(); //Desectructuramos la data de nuestra respuesta, siempre recordando convertir esta respuesta a formato json.
 
   const gifs = data.map((gif: Gif) => {
-    console.log(gif)
     return {
       id: gif.id,
       title: gif.title,

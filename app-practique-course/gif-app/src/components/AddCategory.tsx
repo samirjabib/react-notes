@@ -5,7 +5,7 @@ export const AddCategory = ({ onNewCategory }: AddCategoryProps) => {
   const { inputValue, onInputChange, onSubmit } = useInput(onNewCategory);
   
   return (
-    <form onSubmit={onSubmit}>
+    <form onSubmit={onSubmit} aria-label="form">
       <input
         type="text"
         placeholder="Buscar gifs"
