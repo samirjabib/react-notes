@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1679411754104" clover="3.2.0">
-  <project timestamp="1679411754104" name="All files">
-    <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3" elements="13" coveredelements="13" complexity="0" loc="10" ncloc="10" packages="2" files="2" classes="2"/>
+<coverage generated="1679413222720" clover="3.2.0">
+  <project timestamp="1679413222720" name="All files">
+    <metrics statements="23" coveredstatements="19" conditionals="2" coveredconditionals="0" methods="7" coveredmethods="6" elements="32" coveredelements="25" complexity="0" loc="23" ncloc="23" packages="3" files="4" classes="4"/>
     <package name="components">
-      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="AddCategory.tsx" path="C:\Users\samir\Documents\react-notes\app-practique-course\gif-app\src\components\AddCategory.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+      </file>
       <file name="GifItem.tsx" path="C:\Users\samir\Documents\react-notes\app-practique-course\gif-app\src\components\GifItem.tsx">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="10" count="1" type="stmt"/>
@@ -22,6 +28,22 @@
         <line num="12" count="10" type="stmt"/>
         <line num="13" count="10" type="stmt"/>
         <line num="20" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="hooks">
+      <metrics statements="10" coveredstatements="6" conditionals="2" coveredconditionals="0" methods="3" coveredmethods="2"/>
+      <file name="useInput.ts" path="C:\Users\samir\Documents\react-notes\app-practique-course\gif-app\src\hooks\useInput.ts">
+        <metrics statements="10" coveredstatements="6" conditionals="2" coveredconditionals="0" methods="3" coveredmethods="2"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
       </file>
     </package>
   </project>
