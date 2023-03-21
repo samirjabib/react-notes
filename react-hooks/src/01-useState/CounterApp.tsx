@@ -1,13 +1,9 @@
 import { useState } from 'react';
-
 /* 
-    
-        ¿ Que es el hook useState ?
-        
+        ¿ Que es el hook useState ?     
         el useState es una funcion que crea unternamente una variable dondre podremos 
         almacenar el estado de nuestro componente. Acepta un valor inicial para esa variable,
         y devuelve un array con dos elementos, el valor de la variable y la funcion para modificarla.
-
 
         const [state = setState ] = useState(default)
 
@@ -16,14 +12,10 @@ import { useState } from 'react';
             default2,
             default3,
         })
-
-
+        
 */
 
 export const CounterApp = () => {
-
-
-    
 
     const [ state, setCounter] = useState({/* 
                                                 Podemos recibir de estado multiples propiedades o objetos, no estamos limitado a uno solo.

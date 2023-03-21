@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom/client';
 //*Podemos cambiar la aplicacion dependiendo cual se quiera estudiar.
 
 // import { HooksApp } from './HooksApp';
-// import { CounterApp } from './01-useState/CounterApp';
+import { CounterApp } from './01-useState/CounterApp';
 // import { CounterWithCustomHook } from './01-useState/CounterWithCustomHook';
 // import { SimpleForm } from './02-useEffect/SimpleForm';
 // import { FormWithCustomHook } from './02-useEffect/FormWithCustomHook';
@@ -22,8 +22,9 @@ import { MainApp } from './09-useContext/MainApp';
 import './index.css';
 
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <MainApp/>
+    {/* <MainApp/> */}
+    <CounterApp/>
   </React.StrictMode>
 )
