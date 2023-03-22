@@ -1,9 +1,12 @@
 import { useState } from 'react';
+import { CounterState } from './CounterType.type';
 /* 
-        ¿ Que es el hook useState ?     
-        el useState es una funcion que crea unternamente una variable dondre podremos 
-        almacenar el estado de nuestro componente. Acepta un valor inicial para esa variable,
-        y devuelve un array con dos elementos, el valor de la variable y la funcion para modificarla.
+    ¿Which is the useState?
+
+        the useState is a function which accept inside a variable allow us save the state of the component, this accept
+        a initual value for this variable, and return a array with two elements, the value of variable and the function 
+        for update this. 
+
 
         const [state = setState ] = useState(default)
 
@@ -11,25 +14,24 @@ import { useState } from 'react';
             default1,
             default2,
             default3,
-        })
-        
+    })
 */
 
 export const CounterApp = () => {
 
-    const [ state, setCounter] = useState({/* 
-                                                Podemos recibir de estado multiples propiedades o objetos, no estamos limitado a uno solo.
+    const [ state, setCounter] = useState<CounterState>({/* 
+                                                we can recaive the state of multiples propierties or objects, we don't limit a only one
                                             */
         counter1: 10,  
         counter2: 20,
         counter3: 30,
     });
 
-    const { counter1, counter2, counter3 } = state; //Destructuramos nuestras variables a renderizar de nuestro estado, en este caso el estado del contador
+    const { counter1, counter2, counter3 } = state;
 
   return (
     <>
-        <h1>Counter1: { counter1 }</h1> {/* Imprimimos en pantalla. */}
+        <h1>Counter1: { counter1 }</h1>
         <h1>Counter2: { counter2 }</h1>
         <h1>Counter3: { counter3 }</h1>
 
@@ -39,11 +41,11 @@ export const CounterApp = () => {
             className="btn" 
             onClick={ 
                 () => setCounter({/*
-                                    Usamos el spread operator, pasando primero el parametro el arreglo para mantener la informacion, 
-                                    y despues la variable que vamos a actualizar. 
+                                    we use spread operator, passing first the parameters, in this case the array for persist the information,
+                                    and after the variable that we want update or add.
                                 */
-                    ...state, //Copia del estado. 
-                    counter1: counter1 + 1, //Operacion para sumar la pasamos el state, en este caso la modificamos ya que nos que re-escribe la propiedad ya existente
+                    ...state, 
+                    counter1: counter1 + 1,
                 })}>
                  +1
         </button>

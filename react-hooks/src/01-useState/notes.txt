@@ -1,7 +1,4 @@
-import { useCounter } from '../hooks/useCounter';
 
-
-/*
 
     ¿ Que es un Hook ? 
 
@@ -42,25 +39,3 @@ import { useCounter } from '../hooks/useCounter';
                 Lo que realmente tienen de particular los custom hooks en React es que pueden llamar a otros hooks. 
                 En este orden de ideas, React considera como custom hook a aquella función que dentro llama a un hook
                 original o a otro custom hook. 
-
-        
-*/
-
-export const CounterWithCustomHook = () => {
-
-    
-    const { counter, increment, decrement, reset } = useCounter(); //Traemos los datos a mostrar mediante el custom hook, 
-
-
-    return (
-        <>
-            <h1>Counter with Hook: { counter }</h1>
-            <hr />
-
-            <button onClick={ () => increment(2) } className="btn btn-primary">+1</button>{/*Podemos enviar por argumento el valor a nuestra funcion para operar dinamicamente */}
-            <button onClick={ reset } className="btn btn-primary">Reset</button>
-            <button onClick={ () => decrement(2) } className="btn btn-primary">-1</button>
-        
-        </>
-    )
-}
