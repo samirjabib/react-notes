@@ -5,15 +5,13 @@ import { useForm } from '../hooks/useForm';
 
 export const FormWithCustomHook = () => {
 
-    const { formState, onInputChange, onResetForm, username, email, password } = useForm({      /*
-                                                                                                    Variables creadas por el spread operator en el hook.
-                                                                                                */
+    const { formState, onInputChange, onResetForm } = useForm({ 
         username: '',
         email: '',
         password: ''
     });
 
-    // const { username, email, password } = formState;
+    const { username, email, password } = formState;
   
 
     return (

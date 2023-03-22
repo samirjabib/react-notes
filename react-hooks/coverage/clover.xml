@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1679451135610" clover="3.2.0">
-  <project timestamp="1679451135610" name="All files">
-    <metrics statements="10" coveredstatements="10" conditionals="4" coveredconditionals="2" methods="4" coveredmethods="4" elements="18" coveredelements="16" complexity="0" loc="10" ncloc="10" packages="1" files="1" classes="1"/>
-    <file name="useCounter.ts" path="C:\Users\samir\Documents\react-notes\react-hooks\src\hooks\useCounter.ts">
-      <metrics statements="10" coveredstatements="10" conditionals="4" coveredconditionals="2" methods="4" coveredmethods="4"/>
+<coverage generated="1679452675472" clover="3.2.0">
+  <project timestamp="1679452675472" name="All files">
+    <metrics statements="8" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2" elements="11" coveredelements="9" complexity="0" loc="8" ncloc="8" packages="1" files="1" classes="1"/>
+    <file name="useForm.ts" path="C:\Users\samir\Documents\react-notes\react-hooks\src\hooks\useForm.ts">
+      <metrics statements="8" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="5" count="3" type="stmt"/>
+      <line num="7" count="3" type="stmt"/>
       <line num="8" count="1" type="stmt"/>
-      <line num="14" count="8" type="stmt"/>
-      <line num="16" count="8" type="cond" truecount="1" falsecount="0"/>
-      <line num="17" count="2" type="stmt"/>
-      <line num="20" count="8" type="cond" truecount="0" falsecount="1"/>
-      <line num="21" count="2" type="cond" truecount="1" falsecount="1"/>
-      <line num="23" count="2" type="stmt"/>
-      <line num="26" count="8" type="stmt"/>
-      <line num="27" count="1" type="stmt"/>
-      <line num="30" count="8" type="stmt"/>
+      <line num="10" count="1" type="stmt"/>
+      <line num="16" count="3" type="stmt"/>
+      <line num="17" count="0" type="stmt"/>
+      <line num="20" count="3" type="stmt"/>
     </file>
   </project>
 </coverage>
